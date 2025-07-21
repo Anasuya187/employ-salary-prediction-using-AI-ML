@@ -1,4 +1,4 @@
-#  Employee Salary Prediction Web Application
+#  Employee Salary Prediction using AI-ML
 
 [![Kaggle Dataset](https://img.shields.io/badge/dataset-Kaggle-blue)](https://www.kaggle.com/datasets/rkiattisak/salaly-prediction-for-beginer)
 [![Kaggle Notebook](https://img.shields.io/badge/Kaggle_Notebook-Open-blue)](https://www.kaggle.com/code/roshians/employe-salary-prediction-using-ml)
