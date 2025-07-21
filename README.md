@@ -1,36 +1,31 @@
 # 🧠 Employee Salary Prediction Using Random Forest
 
-This project builds a machine learning model to predict whether an individual's income exceeds $50K annually based on demographic features like age, education, workclass, hours-per-week, and more.
+This project uses a Random Forest Classifier to predict whether a person earns more than $50K per year based on demographic attributes.
 
 ---
 
-## 📁 Dataset
+## 📊 Input Feature Distributions
 
-- Dataset: `adult 3.csv`
-- Based on the [UCI Adult Income Dataset](https://archive.ics.uci.edu/ml/datasets/adult)
-- Target variable: `income` (binary: `<=50K` or `>50K`)
+These histograms show how each numerical input feature (like age, hours-per-week, capital-gain/loss) is distributed in the dataset:
 
----
-
-## 🎯 Objective
-
-To use a **Random Forest Classifier** to accurately predict income level based on personal and work-related attributes.
+![Input Histograms](screenshots/input_histograms.png)
 
 ---
 
-## 🛠️ Technologies Used
+## 🔍 Confusion Matrix
 
-- Python 3.x
-- Google Colab
-- pandas, numpy
-- scikit-learn
-- matplotlib, seaborn
+This heatmap shows how well the model predicted the income levels on test data:
+
+![Confusion Matrix](screenshots/confusion_matrix.png)
 
 ---
 
-## 🔁 Project Workflow
+## 💡 Feature Importance
 
-1. **Data C**
+This chart highlights which features contributed the most to the model’s decisions:
+
+![Feature Importance](screenshots/feature_importance.png)
+
 
 
 
