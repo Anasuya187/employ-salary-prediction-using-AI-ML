@@ -1,5 +1,5 @@
 
-# 🧠 Employee Salary Prediction Using Random Forest
+# 🧠 Employee Salary Prediction Using AI-ML
 
 This project uses a Random Forest Classifier to predict whether a person earns more than $50K per year based on demographic attributes.
 
