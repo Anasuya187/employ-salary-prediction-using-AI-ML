@@ -1,98 +1,46 @@
-#  Employee Salary Prediction using AI-ML
+# 🧠 Employee Salary Prediction Using Random Forest
 
-[![Kaggle Dataset](https://img.shields.io/badge/dataset-Kaggle-blue)](https://www.kaggle.com/datasets/rkiattisak/salaly-prediction-for-beginer)
-[![Kaggle Notebook](https://img.shields.io/badge/Kaggle_Notebook-Open-blue)](https://www.kaggle.com/code/roshians/employe-salary-prediction-using-ml)
-[![View Demo](https://img.shields.io/badge/Demo-Streamlit%20App-brightgreen?logo=streamlit)](https://employe-salary-prediction-using-ml.streamlit.app/)
+This project uses the [UCI Adult Income Dataset](https://archive.ics.uci.edu/ml/datasets/adult) to build a machine learning model that predicts whether an individual's salary exceeds $50K/year based on features like age, education, occupation, and hours worked per week.
 
+## 📁 Dataset
 
-A Machine Learning-powered web app that accurately predicts employee salaries based on inputs such as age, gender, education level, job title, and years of experience. Designed with a modern UI using **Streamlit**, and trained using regression techniques in **scikit-learn**.
+- File used: `adult 3.csv`
+- Features include:
+  - Age, Education, Occupation
+  - Workclass, Relationship, Capital-gain/loss
+  - Hours-per-week, Gender, Native country
+- Target: `income` (<=50K or >50K)
 
----
+## 🔍 Objective
 
-## Features
-
--  Predict salary using multiple input factors
--  Interactive and modern Streamlit UI
--  Real-time display of predicted salary, monthly salary, hourly rate
--  Visual R² Score indicating model performance
--  Trained using Linear Regression with proper preprocessing
--  Model caching for fast response
+To train a **Random Forest Classifier** that can accurately predict if a person's income is greater than 50K based on demographic features.
 
 ---
 
-## Input Features
+## 🚀 Project Flow
 
-- Age
-- Gender
-- Education Level
-- Job Title
-- Years of Experience
+1. **Data Cleaning**  
+   - Replace missing values (`?`) with `NaN`
+   - Drop rows with missing entries
 
----
+2. **Data Encoding**  
+   - Label encode categorical columns for ML compatibility
 
-## Tech Stack
+3. **Model Training**  
+   - Train/Test split (80/20)
+   - Random Forest Classifier model fitting
 
-| Layer       | Tools Used                        |
-|-------------|-----------------------------------|
-| UI          | Streamlit                         |
-| ML Model    | XGBRegressor                      |
-| Data Prep   | Pandas, NumPy, LabelEncoder, Scaler |
-| Deployment  | Streamlit Cloud                   |
+4. **Model Evaluation**  
+   - Accuracy Score
+   - Confusion Matrix (with Heatmap)
+   - Classification Report (Precision, Recall, F1)
 
----
-
-
-
-## Setup Instructions
-
-### 1. Clone the Repository
-```bash
-git clone Roshians/Employe-Salary-Prediction-Using-ML
-cd Employe-Salary-Prediction-Using-ML
-````
-
-### 2. Create a Virtual Environment
-
-```bash
-python -m venv venv
-
-# On Windows
-.\venv\Scripts\activate
-
-# On macOS/Linux
-source venv/bin/activate
-```
-
-### 3. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Run the Application Locally
-
-```bash
-streamlit run app.py
-```
+5. **Visualization**
+   - Input feature distributions (histograms)
+   - Confusion matrix heatmap
 
 ---
 
-## Model Information
+## 📊 Example Output
 
-* **Algorithm**: XGBoost Regressor
-* **Evaluation Metric**: R² Score
-* **Encoding**: Label Encoding for categorical fields
-* **Scaling**: StandardScaler for numeric normalization
 
----
-
-##  Screenshots
-
-| Input Form                               | Salary Prediction Output                 |
-| ---------------------------------------- | ---------------------------------------- |
-| [![4YNKJFKj.png](https://i.postimg.cc/5288Shf9/Screenshot-2025-07-19-225402.png)](https://postimg.cc/4YNKJFKj) | [![5-C3-D3098-24-A4-4-EF3-ABE2-7-D2-EBE64-D96-A.png](https://i.postimg.cc/CKYkPcKG/Screenshot-2025-07-19-225451.png)](https://postimg.cc/sM6M197x) |
-
----
-
-## License
-This project is for educational and internship purposes. All rights reserved by the author.
